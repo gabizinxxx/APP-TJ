@@ -25,16 +25,19 @@
                     <a href="#" class="icons"><i class='bx bxl-linkedin'></i></a>
                 </div>
                 <span>Vincule com suas redes sociais</span>
-                <input type="text" id="name" name="name" placeholder="Nome">
+                <input type="text" id="nome" name="nome" placeholder="Nome">
+
                 <input type="email" id="email" name="email" placeholder="informe seu E-mail">
+
                 <input type="password" id="senha" name="senha" placeholder="Crie uma senha">
-                <button type="submit" name="submit" id="submit">Criar</button>
+
+                <button type="submit" id="submit" name="submit">Criar</button>
             </form>
         </div>
 
 
         <div class="form-container sign-in">
-            <form method="post" action="">
+            <form action="login.php" method="post">
                 <h1>Entrar</h1>
                 <div class="social-icons">
                     <a href="#" class="icons"><i class='bx bxl-google'></i></a>
@@ -43,10 +46,10 @@
                     <a href="#" class="icons"><i class='bx bxl-linkedin'></i></a>
                 </div>
                 <span>Entrar com Email e Senha</span>
-                <input type="email" placeholder="Coloque seu E-mail">
-                <input type="password" placeholder="Coloque sua senha">
+                <input type="email" id="email" name="email" required placeholder="Coloque seu E-mail">
+                <input type="password" id="senha" name="senha" required placeholder="Coloque sua senha">
                 <a href="#">Esqueceu a senha?</a>
-                <button>Entrar</button>
+                <button type="submit" id="submit" name="submit">Entrar</button>
             </form>
         </div>
 

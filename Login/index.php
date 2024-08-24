@@ -1,9 +1,9 @@
 <?php
 
 if(isset($_POST['submit'])) {
-    $nome = $_POST['name'];
+    $nome = $_POST['nome'];
     $email = $_POST['email'];
-    $senha = $_POST['senha'];
+    $senha_hash = password_hash($_POST['senha'], PASSWORD_DEFAULT);
 }
 
 $host = 'localhost';
@@ -13,28 +13,16 @@ $banco = 'tj';
 
 $con = mysqli_connect($host,$user,$senha_user,$banco);
 
-echo '<meta http-equiv="refresh" content="0;url=http://localhost/APP%20TJ/home/inicial.php">';
+header("location: inicial.php");
 
-$rs = mysqli_query($con, "INSERT INTO cadastro(nome, email, senha) VALUES('$nome', '$email', '$senha')");
+$sql = "INSERT INTO cadastro (nome, email, senha) VALUES (?, ?, ?)";
+    $stmt = $con->prepare($sql);
+    $stmt->bind_param("sss", $nome, $email, $senha_hash);
 
-if($con){
-    die("conexão errada" . mysqli_connect_error());
-}
-
-if($rs){
-    echo"conexão 100%";
-}
-
-
-
-
-
-
-
-
-
-
-
-
+    if ($stmt->execute()) {
+        echo "Usuário cadastrado com sucesso!";
+    } else {
+        echo "Erro: " . $stmt->error;
+    }
 
 ?>
