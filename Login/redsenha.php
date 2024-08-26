@@ -4,7 +4,7 @@ $username = "root";
 $password = "";
 $dbname = "tj";
 
-// Verificar o token
+
 if (isset($_GET['token'])) {
     $token = $_GET['token'];
 
@@ -14,7 +14,7 @@ if (isset($_GET['token'])) {
         die("Conexão falhou: " . $conn->connect_error);
     }
 
-    // Verificar o token no banco de dados
+    
     $sql = "SELECT email FROM resetar_tokens WHERE token = ? AND expiry > NOW()";
     $stmt = $conn->prepare($sql);
 

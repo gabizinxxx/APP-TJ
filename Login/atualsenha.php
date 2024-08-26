@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
     $token = $_POST['token'];
     $senha = $_POST['senha'];
 
-    // Verificar se o token é válido
+    
     $sql = "SELECT token FROM resetar_tokens WHERE email = ? AND token = ? AND expiry > NOW()";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("ss", $email, $token);
@@ -23,16 +23,16 @@ if (isset($_POST['submit'])) {
     $result = $stmt->get_result();
 
     if ($result->num_rows > 0) {
-        // Hash da nova senha
+        
         $hashedPassword = password_hash($senha, PASSWORD_DEFAULT);
 
-        // Atualizar a senha
+        
         $sql = "UPDATE cadastro SET senha = ? WHERE email = ?";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("ss", $hashedPassword, $email);
         $stmt->execute();
 
-        // Remover o token
+        
         $sql = "DELETE FROM resetar_tokens WHERE email = ? AND token = ?";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("ss", $email, $token);
