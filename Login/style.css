@@ -203,3 +203,21 @@ body{
     transform: translateX(0);
 }
 
+.form-container sign-in .up{
+
+    color: red;
+}
+
+.container .up{
+    margin-bottom: 15px;
+}
+
+.container .up1{
+    color: red;
+    margin: 10px;
+}
+
+.container .p{
+    color: red;
+    margin: 5px;
+}
