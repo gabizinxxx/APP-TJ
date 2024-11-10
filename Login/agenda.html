@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <title>Agenda</title>
+</head>
+<body>
+  <style>
+   body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #241c8b;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .header h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #241c8b;
+            padding: 10px 0;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        .nav a.active {
+            border-bottom: 2px solid white;
+        }
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+        .content h2 {
+            font-size: 18px;
+            color: #666;
+        }
+        .calendar {
+            margin: 20px auto;
+            width: 300px;
+        }
+        .events {
+            text-align: left;
+            margin: 20px auto;
+            width: 300px;
+        }
+        .events h3 {
+            font-size: 16px;
+            color: #666;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .events h3 i {
+            font-size: 20px;
+        }
+        .events ul {
+            list-style: none;
+            padding: 0;
+        }
+        .events ul li {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+            font-size: 14px;
+        }
+        .add-event {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .add-event button {
+            background-color: #2c2c7c;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .add-event input {
+            background-color: #e0e0e0;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin-right: 10px;
+            font-size: 14px;
+            width: 200px;
+        }
+  </style>
+  <div class="header">
+   <img alt="Profile picture of a person" height="50" src="ze.jpg" width="50"/>
+   <h1>
+    AGENDA
+   </h1>
+  </div>
+  <div class="nav">
+   <a href="home.php">
+    Home
+   </a>
+   <a href="chat.html">
+    Chat
+   </a>
+   <a class="active" href="#">
+    Agenda
+   </a>
+   <a href="perfil.php">
+    Perfil
+   </a>
+  </div>
+  <div class="content">
+   <h2>
+    Terça, 12/11/2024
+   </h2>
+   <div class="calendar">
+    <img alt="Calendar for May 2024 with the 5th highlighted" height="200" src="https://i.pinimg.com/originals/2a/ad/68/2aad68d811e7bd2d32a60bd82c78c24f.jpg" width="300"/>
+   </div>
+   <div class="events">
+    <h3>
+     Eventos hoje (2):
+     <i class="fas fa-chevron-down">
+     </i>
+    </h3>
+    <ul>
+     <li>
+      Trabalho de Informática
+      <span>
+       14:30
+      </span>
+     </li>
+     <li>
+      Trabalho de Português
+      <span>
+       16:00
+      </span>
+     </li>
+    </ul>
+    <h3>
+     Esta semana (3):
+     <i class="fas fa-chevron-right">
+     </i>
+    </h3>
+   </div>
+   <div class="add-event">
+    <span>
+        <input placeholder="Adicionar evento..." type="text"/>
+    </span>
+    <button>
+     <i class="fas fa-plus">
+     </i>
+    </button>
+   </div>
+  </div>
+ </body>
+</html>

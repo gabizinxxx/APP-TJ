@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <title>Chat</title>
+</head>
+<body>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2ff;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #241c8b;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .search-bar {
+            margin-left: auto;
+            position: relative;
+        }
+        .search-bar input {
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            width: 200px;
+        }
+        .search-bar i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #ccc;
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #241c8b;
+            padding: 10px 0;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        .nav a.active {
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+        }
+        .chat-list {
+            padding: 20px;
+        }
+        .chat-item {
+            background-color: white;
+            border-radius: 10px;
+            padding: 35px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .chat-item img {
+            border-radius: 50%;
+            width: 70px;
+            height: 70px;
+            margin-right: 10px;
+        }
+        .chat-item .chat-info {
+            flex-grow: 1;
+        }
+        .chat-item .chat-info h2 {
+            font-size: 20px;
+            margin: 0;
+        }
+        .chat-item .chat-info p {
+            margin: 0;
+            color: #888;
+        }
+        .chat-item .chat-time {
+            color: #888;
+            font-size: 17px;
+        }
+  </style>
+ <body>
+  <div class="header">
+   <img alt="User profile picture" height="50" src="ze.jpg" width="50"/>
+   <h1>
+    CONVERSAS
+   </h1>
+   <div class="search-bar">
+    <input placeholder="Buscar tutores..." type="text"/>
+    <i class="fas fa-search">
+    </i>
+   </div>
+  </div>
+  <div class="nav">
+   <a href="home.php">
+    Home
+   </a>
+   <a class="active" href="#">
+    Chat
+   </a>
+   <a href="agenda.html">
+    Agenda
+   </a>
+   <a href="perfil.php">
+    Perfil
+   </a>
+  </div>
+  <div class="chat-list">
+   <div class="chat-item">
+    <img alt="Gabriel da Silva França" height="40" src="spidergab.jpg" width="40"/>
+    <div class="chat-info">
+     <h2>
+      Gabriel da Silva França
+     </h2>
+     <p>
+      ultima mensagem....
+     </p>
+    </div>
+    <div class="chat-time">
+     10:52
+    </div>
+   </div>
+   <div class="chat-item">
+    <img alt="Brian Lima Oliveira" height="40" src="brian2.jpg" width="40"/>
+    <div class="chat-info">
+     <h2>
+      Brian Lima Oliveira
+     </h2>
+     <p>
+      ultima mensagem....
+     </p>
+    </div>
+    <div class="chat-time">
+     09:41
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Home</title>
+</head>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2ff;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #241c8b;
+            color: white;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+        }
+        .header i {
+            margin-right: 10px;
+        }
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        .icon-container {
+            background-color: white;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .icon-container img {
+            width: 100px;
+            height: 100px;
+        }
+        .icon-container p {
+            margin: 10px 0 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .button {
+            display: block;
+            width: 300px;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: #d3d3d3;
+            color: black;
+            text-align: left;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            position: relative;
+        }
+        .button i {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .tutors {
+            margin-top: 40px;
+            text-align: left;
+            padding: 0 20px;
+        }
+        .tutors h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .tutor-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .tutor-card img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .tutor-info {
+            flex-grow: 1;
+        }
+        .tutor-info h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+        .tutor-info p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            color: black;
+        }
+        .tutor-rating {
+            display: flex;
+            align-items: center;
+        }
+        .tutor-rating i {
+            color: gold;
+            margin-right: 5px;
+        }
+        .tutor-rating span {
+            font-size: 14px;
+        }
+        .fa-arrow-left{
+            color: #f0f2ff;
+        }
+        a{
+            text-decoration: none;
+        }
+  </style>
+ <body>
+  <div class="header">
+   <a href="home.php"><i class="fas fa-arrow-left"></i></a>
+   </i>
+   <h1>
+    Linguagens
+   </h1>
+  </div>
+  <div class="container">
+   <div class="icon-container">
+    <img alt="Icon representing languages" height="100" src="noun-consulting-1326847.png" width="100"/>
+    <p>
+     Linguagens
+    </p>
+   </div>
+   <a href=""><button class="button">
+    Inglês
+    <i class="fas fa-arrow-right">
+    </i>
+   </button></a>
+   <a href=""><button class="button">
+    Português
+    <i class="fas fa-arrow-right">
+    </i>
+   </button></a>
+  </div>
+  <div class="tutors">
+   <h2>
+    Tutores disponíveis
+   </h2>
+   <div class="tutor-card">
+    <img alt="João Pedro" height="50" src="jp.jpg" width="50"/>
+    <div class="tutor-info">
+     <h3>
+      João Pedro
+     </h3>
+     <p>
+      Linguagens
+     </p>
+    </div>
+    <div class="tutor-rating">
+     <i class="fas fa-star">
+     </i>
+     <span>
+      4.9
+     </span>
+    </div>
+   </div>
+   <div class="tutor-card">
+    <img alt="Vitor H. de O. Marques" height="50" src="https://scontent.fcrq1-1.fna.fbcdn.net/v/t39.30808-6/453997431_1472786776770699_2821572930411956620_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHyspUdhd9SP-75vrz7p8rHr--Zx9U7Lcyv75nH1TstzOtuuroMRSBIdyZtTbuV9l2-LYZbdogI_5gqCITIoCbp&_nc_ohc=sVr7d2Prc6IQ7kNvgHVLJXr&_nc_zt=23&_nc_ht=scontent.fcrq1-1.fna&_nc_gid=A0qRZfVZNKLLQjo7-24wEo1&oh=00_AYA0SQ4FTJxFcXgg285D4D1nD1x0sg9_rfcsf8zT0jYPAQ&oe=67367D6B" width="50"/>
+    <div class="tutor-info">
+     <h3>
+      Vitor H. de O. Marques
+     </h3>
+     <p>
+      Humanas e Linguagens (2º ano do EM)
+     </p>
+    </div>
+    <div class="tutor-rating">
+     <i class="fas fa-star">
+     </i>
+     <span>
+      4.9
+     </span>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
